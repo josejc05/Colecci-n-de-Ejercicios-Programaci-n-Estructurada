@@ -16,3 +16,16 @@ Estudiante copiarEstudiante(const Estudiante& est) {
     nuevoEst.promedio = est.promedio;
     return nuevoEst;
 }
+int main() {
+    Estudiante estudianteOriginal;
+    strcpy(estudianteOriginal.nombre, "Juan");
+    estudianteOriginal.edad = 20;
+    estudianteOriginal.promedio = 9.5;
+
+    Estudiante estudianteCopia = copiarEstudiante(estudianteOriginal);
+
+    cout << "Copia del estudiante:\n";
+    cout << "Nombre: " << estudianteCopia.nombre << ", Edad: " << estudianteCopia.edad << ", Promedio: " << estudianteCopia.promedio << endl;
+
+    return 0;
+}
