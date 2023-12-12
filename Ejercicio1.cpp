@@ -19,3 +19,16 @@ int main() {
 
     Estudiante *punteroEst = &estudiante1;
     printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", punteroEst->nombre, punteroEst->edad, punteroEst->promedio);
+    const int MAX_ESTUDIANTES = 10;
+    Estudiante listaEstudiantes[MAX_ESTUDIANTES];
+    int numEstudiantes = 0;
+
+    strcpy(listaEstudiantes[numEstudiantes].nombre, "Carlos");
+    listaEstudiantes[numEstudiantes].edad = 21;
+    listaEstudiantes[numEstudiantes].promedio = 8.7;
+    numEstudiantes++;
+
+    cout << "\nLista de Estudiantes:\n";
+    for (int i = 0; i < numEstudiantes; ++i) {
+        cout << "Nombre: " << listaEstudiantes[i].nombre << ", Edad: " << listaEstudiantes[i].edad << ", Promedio: " << listaEstudiantes[i].promedio << endl;
+    }
