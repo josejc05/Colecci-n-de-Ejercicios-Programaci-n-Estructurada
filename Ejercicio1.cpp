@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-
+using namespace std;
 struct Estudiante {
     char nombre[50];
     int edad;
