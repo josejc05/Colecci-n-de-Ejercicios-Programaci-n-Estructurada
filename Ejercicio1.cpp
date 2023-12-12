@@ -32,3 +32,14 @@ int main() {
     for (int i = 0; i < numEstudiantes; ++i) {
         cout << "Nombre: " << listaEstudiantes[i].nombre << ", Edad: " << listaEstudiantes[i].edad << ", Promedio: " << listaEstudiantes[i].promedio << endl;
     }
+    if (numEstudiantes > 0) {
+        numEstudiantes--;
+        cout << "\nEstudiante eliminado." << endl;
+    } else {
+        cout << "\nLa lista de estudiantes está vacía." << endl;
+    }
+
+    delete estudiante2;
+
+    return 0;
+}
